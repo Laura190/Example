@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Example}
+\author{Laura }
+\date{May 2021}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{fullpage}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\subsection{Introduction}\label{sec:intro}
+There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
+There is another theory which states that this has already happened. See figure \ref{fig:universe}. This is a great figure.
+
+% To Do: add figure here
+
+\include{chapter1}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\textwidth]{universe}
+\caption{The Universe}
+\label{fig:universe}
+\end{figure}
+
+\section{Conclusion}
+Section \ref{sec:intro} is great. ``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
